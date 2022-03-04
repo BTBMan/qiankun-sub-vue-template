@@ -11,8 +11,8 @@ module.exports = {
   },
   configureWebpack: {
     output: {
-      library: `${name}-[name]`,
-      libraryTarget: 'umd', // 把微应用打包成 umd 库格式
+      library: name,
+      libraryTarget: 'umd',
       jsonpFunction: `webpackJsonp_${name}`,
     },
   },
