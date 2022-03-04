@@ -1,6 +1,8 @@
 const { name } = require('./package');
+const { base } = require('./config');
 
 module.exports = {
+  publicPath: base,
   devServer: {
     port: 3400,
     headers: {
